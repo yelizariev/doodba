@@ -470,7 +470,7 @@ Usage:
 Environment variables are there so that if you need to connect with the
 database, you just need to execute:
 
-    docker exec -it your_container psql
+    docker exec -it your_container psql -U odoo db_name
 
 The same is true for any other [Postgres client applications][].
 
@@ -751,7 +751,7 @@ Once you fixed everything needed, run it with:
 
 ###### Global inverse proxy
 
-For [production][] and [test][] templates to work fine, you need to have a
+For [production][] and [testing][] templates to work fine, you need to have a
 working [Traefik][] inverse proxy in each node.
 
 To have it, use this `inverseproxy.yaml` file:
