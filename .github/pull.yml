@@ -1,0 +1,6 @@
+version: "1"
+rules:
+  - base: master
+    upstream: Tecnativa:master
+    mergeMethod: merge
+label: ":alien: pull from Tecnativa"
