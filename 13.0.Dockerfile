@@ -211,5 +211,4 @@ ONBUILD RUN mkdir -p /opt/odoo/custom/ssh \
             && chmod -R u=rwX,go= /opt/odoo/custom/ssh \
             && sync
 ONBUILD RUN /opt/odoo/common/build && sync
-ONBUILD VOLUME ["/var/lib/odoo"]
 ONBUILD USER odoo
