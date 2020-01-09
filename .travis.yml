@@ -29,7 +29,7 @@ env:
     # Indicates what's the equivalent to tecnativa/doodba:latest image
     - LATEST_RELEASE=13.0
     # Variables found by default in Docker Hub builder
-    - DOCKER_REPO=tecnativa/doodba
+    - DOCKER_REPO=itprojectsllc/doodba
   jobs:
     - DOCKER_TAG=13.0
     - DOCKER_TAG=12.0
