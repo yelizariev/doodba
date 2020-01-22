@@ -1,0 +1,28 @@
+name: Rebuild README's TOC
+
+on:
+  push:
+    branches:
+    - toc
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+    - name: install doctoc
+      run: |
+        sudo npm install -g doctoc
+    - name: Generate TOC
+      run: |
+        doctoc README.md
+    - uses: stefanzweifel/git-auto-commit-action@v2.5.0
+      with:
+        commit_message: Rebuild README's TOC
+        branch: toc
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

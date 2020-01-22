@@ -36,6 +36,9 @@ together and make it work anywhere quickly.
 
 You can start working with this straight away with our [scaffolding][].
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 ## Image usage
 
 Basically, every directory you have to worry about is found inside `/opt/odoo`.
